@@ -13,7 +13,7 @@ Added new additional noise types which are selectable from the waveform potentio
 Added a rolling average filter to the oscillators to help reduce steps between samples.
 
 ## Compilation
-Inherits from the bertrik branch that added files required to compile the firmware from PlatformIO
+Inherits from the #bertrik/soundforce branch that added files required to compile the firmware from PlatformIO
 
 # Reference
 Firmwares for http://sound-force.nl/?page_id=2212 updated for use with platformio
