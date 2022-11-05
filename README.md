@@ -2,7 +2,7 @@
 
 Firmware for SoundForce's DIY EuroRack STM32DUINO LFO Module (Dual trigger/gate to CV)
 
-[For Through Hole Braids also see: https://github.com/Electro-resonance/Through-hole-braided-DAC ]
+For Through Hole Braids also see: [Electro-resonance/Through-hole-braided-DAC](<https://github.com/Electro-resonance/Through-hole-braided-DAC>)
 
 ## Improvements and Additions
 Added new additional noise types which are selectable from the waveform potentiometer control:
