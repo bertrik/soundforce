@@ -11,6 +11,8 @@ Added new additional noise types which are selectable from the waveform potentio
 * Random walk noise
 * Noise with sample and hold
 
+The random walk noise is quite different from typical white noise and pink noise. At low rates it provides a meandering control voltage, so useful for emergent ambient patches.
+
 ## Enhancements
 Added a rolling average filter to the oscillators to help reduce steps between samples.
 
