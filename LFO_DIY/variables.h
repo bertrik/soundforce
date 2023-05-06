@@ -43,7 +43,7 @@ unsigned long old_div_freq1_pot_read = 0;
 unsigned long old_wave2_pot_read = 0;
 unsigned long old_div_freq2_pot_read = 0;
 
-int analog_threshold = 50;
+int analog_threshold = 10;
 
 bool new_pot_values = 1;
 bool mode = 0;
@@ -75,6 +75,17 @@ struct OSC {
   uint32_t sample_counter_overflow = 0;
   uint32_t samples_per_cycle = 0;
   uint32_t osc_out = 0;
+  uint8_t osc_state=0;
+  uint32_t osc_last=0;
+  double osc_out_new=0;
+  //Random sample
+  int32_t last_rand=0;
+  //Pink noise filter
+  float pink_b0=0;
+  float pink_b1=0;
+  float pink_b2=0;
+  //Register for rolling average
+  double filter_reg=0;
   byte wave_type = 0;
   byte divider = 2;
   byte divider_map = 2;

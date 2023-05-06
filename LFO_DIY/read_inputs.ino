@@ -81,12 +81,22 @@ void read_inputs() {
 
     //setting the wave type according to the pot value in a bit switch case
     switch (wave1_pot_read) {
-      case 0 ... 210: {
+       case 0 ... 69: {
+          OSC[0].wave_type = 9;
+          break;
+        }
+      
+       case 70 ... 169: {
+          OSC[0].wave_type = 8;
+          break;
+        }
+
+       case 170 ... 299: {
           OSC[0].wave_type = 7;
           break;
         }
 
-      case 211 ... 810: {
+      case 300 ... 810: {
           OSC[0].wave_type = 6;
           break;
         }
@@ -127,12 +137,22 @@ void read_inputs() {
   if (abs(wave2_pot_read - old_wave2_pot_read) > analog_threshold || new_pot_values) {
     old_wave2_pot_read = wave2_pot_read;
     switch (wave2_pot_read) {
-      case 0 ... 210: {
-          OSC[1].wave_type = 7;
+       case 0 ... 69: {
+          OSC[1].wave_type = 9;
+          break;
+        }
+      
+       case 70 ... 169: {
+          OSC[1].wave_type = 8;
           break;
         }
 
-      case 211 ... 810: {
+       case 170 ... 299: {
+          OSC[1].wave_type = 7;
+          break;
+        }
+        
+      case 300 ... 810: {
           OSC[1].wave_type = 6;
           break;
         }
